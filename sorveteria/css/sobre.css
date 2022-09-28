@@ -1,0 +1,252 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: #f2dec4;
+  overflow-x: hidden;
+}
+
+/*MENU*/
+.container{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  background: #f4e4cf;
+  width: 100%;
+  height: 5em;
+}
+#menu{
+  position: absolute;
+  opacity: 0;
+}
+/*LISTA*/
+#lista{
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+#lista ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 4.5em;
+}
+#lista li{
+  margin: 1em;
+}
+#lista a{
+  display: block;
+  align-items: center;
+  font-size: 1.3em;
+  color: #401201;
+}
+
+header{
+  display: inline-flex;
+  width: 100%;
+}
+#container-logo-org-lact-veg{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.caixa-logo {
+  float: left;
+}
+.logo-sorvetes-brasil {
+  width: 30em;
+  height: 30em;
+  margin-left: 1em;
+}
+.caixa-org-lac-veg {
+  float: left;
+  padding-top: 5em;
+}
+.organico {
+  width: 10em;
+  height: 10em;
+}
+.lactose {
+  width: 10em;
+  height: 10em;
+}
+.vegano {
+  width: 10em;
+  height: 10em;
+}
+
+
+/* Conteúdo Nossa História*/
+section #container-conteudo{
+  display: flex;
+  width: 100%;
+}
+.historia-sorvetes-brasil {
+  width: 80em;
+  border-radius: 20px;
+  margin-left: 1em;
+}
+.franquias {
+  width: 80em;
+  border-radius: 20px;
+  margin-left: -1em;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: #401201;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#imagens{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.icon img{
+  margin: .5em;
+  display: inline-block;
+  width: 2em;
+}
+footer p{
+  color: #f2dec4;
+}
+
+
+
+@media (max-width: 770px) {
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+  }
+  label{
+    margin: 1em;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 2.5em;
+    width: 4em;
+    left: 0;
+  }
+  label span{
+    position: absolute;
+    display: block;
+    height: .5em;
+    width: 3em;
+    border-radius: 1em;
+    background: #d48e04;
+    transition: .25s ease-in-out;
+  }
+  label span:nth-child(1){
+    top: 0em;
+  }
+  label span:nth-child(2){
+    top: 1em;
+  }
+  label span:nth-child(3){
+    top: 2em;
+  }
+  #menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 1em;
+  }
+  #menu:checked + label span:nth-child(2){
+    opacity: 0;
+  }
+  #menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 1em;
+  }
+  #lista{
+    position: fixed;
+    left: 0;
+    top: 5em;
+    width: 13em;
+    height: 35em;
+    margin-left: -13em;
+    background: #f4e4cf;
+    border-bottom-right-radius: .5em;
+    z-index: 10000;
+    transition: all ease .3s;
+  }
+  #lista ul{
+    flex-direction: column;
+    margin-top: 14em;
+    width: 13em;
+    padding-top: 1em;
+    padding-left: .5em;
+  }
+  #lista ul li{
+    display: block;
+    padding-bottom: 1em;
+    font-size: 2rem;
+  }
+  #lista ul li a{
+    font-size: 1.5rem;
+    color: #401201;
+  }
+  #nav.abrir #lista{
+    margin-left: 0;
+  }
+
+
+  #container-logo-org-lact-veg{
+    display: flex; 
+    width: 100%;
+    margin-top: 5.5em;
+  }
+  .caixa-logo {
+    float: left;
+  }
+  .caixa-org-lac-veg {
+    float: left;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+  }
+  .logo-sorvetes-brasil {
+    width: 18em;
+    height: 18em;
+    margin-left: 2em;
+    margin-top: 2%;
+  }
+  .organico {
+    width: 5em;
+    height: 5em;
+  }
+  .lactose {
+    width: 5em;
+    height: 5em;
+  }
+  .vegano {
+    width: 5em;
+    height: 5em;
+  }
+
+
+  /* Conteúdo Nossa História*/
+  .historia-sorvetes-brasil {
+    width: 26em;
+    border-radius: 20px;
+    margin-left: -1em;
+  }
+  .franquias {
+    width: 24em;
+    border-radius: 20px;
+    margin-left: -1em;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="css/contato.css" />
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="container">
+          <input type="checkbox" id="menu">
+          <label for="menu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </label>
+      </div>
+
+      <div id="lista">
+          <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="cardapio.html">Cardápio</a></li>
+              <li><a href="contato.html">Fale Conosco</a></li>
+              <li><a href="equipe.html">Nossa Equipe</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div id="container-logo-org-lact-veg">
+        <div class="caixa-logo">
+          <img
+          class="logo-sorvetes-brasil"
+          src="imagens/logo-fundo-transparente.png"
+          alt="Logo Sorvetes Brasil"
+          />
+      </div>
+
+      <div class="caixa-org-lac-veg">
+        <img class="organico" src="imagens/organico.png" alt="100% Orgânico" />
+        <img class="lactose" src="imagens/lactose.png" alt="Sem Lactose" />
+        <img class="vegano" src="imagens/vegano.png" alt="100% Vegano" />
+      </div>
+      </div>
+    </header>
+
+    <form action="" id="formulario">
+      <h2>Entre em Contato Conosco</h2>  
+
+        <div class="formulario">
+          <label for="">Nome:</label>
+          <input type="text" name="" id="nome" required placeholder="Digite aqui o seu nome">
+        </div>
+        
+        <div class="formulario">
+          <label for="">E-mail:</label>
+          <input type="email" name="" id="email" required placeholder="Digite aqui o seu e-mail">
+        </div>
+  
+        <div class="formulario">
+          <label for="">Assunto:</label>
+          <select name="Assunto" id="assunto">
+            <option value="infor">Informação</option>
+            <option value="sugest">Sugestão</option>
+            <option value="reclam">Reclamação</option>
+            <option value="duvida">Dúvida</option>
+            <option value="outro">Outros</option>
+          </select>
+        </div>
+  
+        <div class="formulario">
+          <label for="">Mensagem:</label> <br><br>
+          <textarea name="" id="mensagem" cols="50" rows="10" required placeholder="Escreva aqui sua mensagem"></textarea>
+            <br>
+          <input type="submit" value="Enviar" class="submit" onclick="msg()">
+        </div>     
+    </form>
+
+    <footer>
+      <div id="imagens">
+          <div class="icon"> 
+            <a href="https://web.whatsapp.com/" target="_blank"><img  src="imagens/whatsapp.webp" alt="WhatsApp">
+            </a>
+          </div>
+          <div  class="icon">
+            <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.webp" alt="Instagram"></a>
+          </div>
+          <div  class="icon">
+            <a href="https://pt-br.facebook.com/" target="_blank">
+              <img src="imagens/facebook.webp" alt="Facebook"></a>
+          </div>
+      </div>
+      
+      <p>&copy;Sorvetes Brasil</p> 
+    </footer>
+
+    <script>
+      const menu = document.getElementById('menu')
+      function ham(){
+        const nav = document.getElementById('nav')
+        nav.classList.toggle('abrir');
+
+      }
+      menu.addEventListener('click', ham)
+    </script>
+    <script src="js/contato.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Equipe</title>
+    <link rel="stylesheet" href="css/equipe.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav id="nav">
+        <div class="container">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+  
+        <div id="lista">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+                <li><a href="equipe.html">Nossa Equipe</a></li>
+            </ul>
+        </div>
+      </nav>
+
+
+    <div id="container-logo-org-lact-veg">
+        <div class="caixa-logo">
+          <img
+            class="logo-sorvetes-brasil"
+            src="imagens/logo-fundo-transparente.png"
+            alt="Logo Sorvetes Brasil"
+          />
+        </div>
+    </div>
+  
+    <h1 id="titulo_equipe">Conheça Nossa Equipe </h1>
+    <br>
+
+    <div class="caixa_equipe">
+        <div>
+            <img class="img_equipe" src="imagens/CEO.jpg" alt=""></img>
+                <h2 class="nome_equipe">Marcelo Gomes</h2>
+                <p class="texto_equipe">CEO</p>
+        </div>
+    </div>
+
+    <div class="caixa_equipe">
+        <div>
+            <img class="img_equipe" src="imagens/Diretora de Negocios.jpg" alt=""></img>
+                <h2 class="nome_equipe">Agatha Ribeiro</h2>
+                <p class="texto_equipe">Diretora de Negócios</p>
+        </div>
+    </div>
+
+    <div class="caixa_equipe">
+        <div>
+            <img class="img_equipe" src="imagens/Analista de Negocios.jpg" alt=""></img>
+                <h2 class="nome_equipe">Lucelde Menô</h2>
+                <p class="texto_equipe">Analista de Negócios</p>
+        </div>
+    </div>
+
+    <div class="caixa_equipe">
+        <div>
+            <img class="img_equipe" src="imagens/Analista de Design.jpg" alt=""></img>
+                <h2 class="nome_equipe">Ana Aquino</h2>
+                <p class="texto_equipe">Analista de Design</p>
+        </div>
+    </div>
+
+    <div class="caixa_equipe">
+        <div>
+            <img class="img_equipe" src="imagens/Gestora de Pessoas.jpg" alt=""></img>
+                <h2 class="nome_equipe">Jessica Soares</h2>
+                <p class="texto_equipe">Gestora de Pessoas</p>
+        </div>
+    </div>
+
+    <div class="caixa_equipe">
+        <div>
+            <img class="img_equipe" src="imagens/estagiaria.jpg" alt=""></img>
+                <h2 class="nome_equipe">Gabriela Rosa</h2>
+                <p class="texto_equipe">Estagiaria de Design</p>
+        </div>
+    </div>
+
+    <footer>
+        <div id="imagens">
+            <div class="icon"> 
+              <a href="https://web.whatsapp.com/" target="_blank"><img  src="imagens/whatsapp.webp" alt="WhatsApp">
+              </a>
+            </div>
+            <div  class="icon">
+              <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.webp" alt="Instagram"></a>
+            </div>
+            <div  class="icon">
+              <a href="https://pt-br.facebook.com/" target="_blank">
+                <img src="imagens/facebook.webp" alt="Facebook"></a>
+            </div>
+        </div>
+        
+        <p>&copy;Sorvetes Brasil</p> 
+      </footer>
+
+      <script>
+        const menu = document.getElementById('menu')
+        function ham(){
+          const nav = document.getElementById('nav')
+          nav.classList.toggle('abrir');
+  
+        }
+        menu.addEventListener('click', ham)
+      </script>
+</body>
+</html>
